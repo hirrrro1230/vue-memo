@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue'
 import NewView from '../views/NewView.vue'
-
+import EditView from '../views/EditView.vue'
 
 const routes = [
     {
@@ -14,6 +14,11 @@ const routes = [
         name: 'new',
         component: NewView
     },
+    {
+        path: '/edit/:id',
+        name: 'edit',
+        component: EditView
+    }
 ]
 
 const router = createRouter({
